@@ -1,5 +1,5 @@
 # Adding support for Smartlight switch to Espurna
-![SmartLife switch](https://github.com/vtochq/custom/SmartLifeSwitch.png)
+![SmartLife switch](https://github.com/vtochq/custom/blob/master/SmartLifeSwitch.jpg)
 
 ```
 #elif defined(VHOME_BLACK_3CH)
