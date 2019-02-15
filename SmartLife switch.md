@@ -1,19 +1,16 @@
 # Adding support for Smartlight switch to Espurna
 ![SmartLife switch](https://github.com/vtochq/custom/blob/master/SmartLifeSwitch.jpg)
 
+Add defines to the end of file espurna\code\espurna\config\hardware.h
 ```
-#elif defined(VHOME_BLACK_3CH)
-    //used pins 2 4 5 12 13 15 16
-    //free pins 14
-
+#elif defined(SMARTLIFE_2CH)
     // Info
-    #define MANUFACTURER        "VHOME"
-    #define DEVICE              "VHOME_BLACK_3CH"
+    #define MANUFACTURER        "SmartLife"
+    #define DEVICE              "SMARTLIFE_2CH"
 
     // Buttons
     #define BUTTON1_PIN         12
     #define BUTTON2_PIN         5
-    #define BUTTON3_PIN         4
 
     #define BUTTON1_MODE        BUTTON_PUSHBUTTON | BUTTON_DEFAULT_HIGH
     #define BUTTON1_PRESS       BUTTON_MODE_NONE
@@ -28,14 +25,6 @@
     #define BUTTON2_DBLCLICK    BUTTON_MODE_NONE
     #define BUTTON2_LNGCLICK    BUTTON_MODE_NONE
     #define BUTTON2_LNGLNGCLICK BUTTON_MODE_RESET
-
-    #define BUTTON3_MODE        BUTTON_PUSHBUTTON | BUTTON_SET_PULLUP | BUTTON_DEFAULT_HIGH
-    #define BUTTON3_PRESS       BUTTON_MODE_NONE
-    #define BUTTON3_CLICK       BUTTON_MODE_TOGGLE
-    #define BUTTON3_DBLCLICK    BUTTON_MODE_NONE
-    #define BUTTON3_LNGCLICK    BUTTON_MODE_NONE
-    #define BUTTON3_LNGLNGCLICK BUTTON_MODE_NONE
-
 
     #define BUTTON1_RELAY       1
     #define BUTTON2_RELAY       2
@@ -55,14 +44,13 @@
     #define LED2_PIN_INVERSE    1
     #define LED3_PIN            2
     #define LED3_PIN_INVERSE    1
-    //#define LED3_PIN            14
-    //#define LED3_PIN_INVERSE    1
     #define LED2_MODE         LED_MODE_FOLLOW_INVERSE
     #define LED3_MODE         LED_MODE_FOLLOW_INVERSE
-    //#define LED3_MODE         LED_MODE_ON
 
     #define LED1_PIN            0
     #define LED1_PIN_INVERSE    0
 
 #endif
 ```
+
+Then build with flag -DSMARTLIFE_2CH
