@@ -1,4 +1,5 @@
-# Adding support for Smartlight switch to Espurna
+# Adding support for SmartLife switch to Espurna
+My switch looks like this
 ![SmartLife switch](https://github.com/vtochq/custom/blob/master/SmartLifeSwitch.jpg)
 
 Add defines to the end of file espurna\code\espurna\config\hardware.h
