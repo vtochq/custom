@@ -3,7 +3,8 @@ My switch looks like this
 
 ![SmartLife switch](https://github.com/vtochq/custom/blob/master/SmartLifeSwitch.jpg)
 
-Add defines to the end of file espurna\code\espurna\config\hardware.h
+Add definitions to the end of file espurna\code\espurna\config\hardware.h
+
 ```
 #elif defined(SMARTLIFE_2CH)
     // Info
