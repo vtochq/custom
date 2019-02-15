@@ -1,6 +1,7 @@
 # Adding support for Smartlight switch to Espurna
-![SmartLife switch](https://github.com/vtochq/custom/smartlifeswitch.png)
+![SmartLife switch](https://github.com/vtochq/custom/SmartLifeSwitch.png)
 
+```
 #elif defined(VHOME_BLACK_3CH)
     //used pins 2 4 5 12 13 15 16
     //free pins 14
@@ -64,3 +65,4 @@
     #define LED1_PIN_INVERSE    0
 
 #endif
+```
