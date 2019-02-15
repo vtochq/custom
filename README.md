@@ -1,1 +1,1 @@
-# custom
+# customization and other things
